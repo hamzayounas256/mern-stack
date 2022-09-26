@@ -1,9 +1,10 @@
-function update()
+window.onload = function()
 {
-    console.log("Updating result");
-    var input = document.getElementById("myinput");
-    console.log(input.value);
-    var output = document.getElementById("myoutput");
-    output.innerHTML = input.value;
-    
+    var btn = document.getElementById("mybtn");
+    btn.onclick =  function(){
+        console.log("Hamza younas");
+    }
+    btn.onmouseleave = function(){
+        console.log("Muhammad younas");
+    }
 }
