@@ -6,10 +6,12 @@
     <script src="./script.js"></script>
 </head>
 <body>
-    <input type="text" id="myinp1">
-    <span>+</span>
-    <input type="text" id="myinp2">
-    <button id="mybtn">Addition</button>
-    <!-- <input type="text" id="res"> -->
-</body>
-</html>
+    <input type="text" id="myinp">
+    <button id="mybtn">Add new TODO</button>
+    <ul id="todos">
+        <li>coffee<button onclick="removeHandle(event)">DELETE</button></li>
+        <li>milk<button onclick="removeHandle(event)">DELETE</button></li>
+        <li>yogurt<button onclick="removeHandle(event)">DELETE</button></li>
+        <li>polmegranate juice<button onclick="removeHandle(event)">DELETE</button></li>
+        <li>mint margarita<button onclick="removeHandle(event)">DELETE</button></li>
+    </ul>

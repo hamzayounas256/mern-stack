@@ -1,15 +1,22 @@
 window.onload = function()
 {
     console.log("loading...");
-    var inp1 = document.getElementById("myinp1");
-    var inp2 = document.getElementById("myinp2");
-    // var res = document.getElementById("res");
     var btn = document.getElementById("mybtn");
-    btn = Number(inp1) + Number(inp2);
-    // res.innerHTML = btn;
-    btn.onclick = function(){
-        // res = btn.value;
-        console.log("The result is the ");
-        console.log(btn);
-    }
+    btn.onclick = addHandle;
+}
+
+function addHandle(){
+    var newtodo = document.getElementById("myinp").value;
+    var mytodos = document.getElementById("todos");
+    var newtext = document.createTextNode(newtodo);
+    var myli = document.createElement("li");
+    myli.appendChild(newtext);
+    mytodos.appendChild(myli);
+}
+
+function removeHandle(e){
+    var tag = e.target;
+  var li = tag.parentNode;
+  li.parentNode.removeChild(li);
+
 }
